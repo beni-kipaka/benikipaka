@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beni Kipaka — Graphiste, Brand Designer & Développeur Web</title>
+  <meta name="description" content="Portfolio de Beni Kipaka : identités visuelles, design graphique et sites web sur mesure.">
+  <meta name="theme-color" content="#00291B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" hidden><symbol id="bk" viewBox="0 0 40 44"><path d="M8 8h7l5-6 5 6h7a6 6 0 0 1 6 6v20a6 6 0 0 1-6 6H8a6 6 0 0 1-6-6V14a6 6 0 0 1 6-6Z"/></symbol></svg>
+
+<div class="topbar">Disponible pour 2 nouveaux projets ce mois-ci. <a href="#contact">Réserver ma place</a></div>
+
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <!-- Remplace le logo par : <img src="assets/logo.svg" alt="Beni Kipaka" height="34"> -->
+    <a href="#top" class="brand"><span class="mark"><svg><use href="#bk"/></svg><b>bk</b></span>beni <em>kipaka</em></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu"><i></i><i></i></button>
+    <nav id="nav" class="nav">
+      <a href="#outils">Outils</a><a href="#projets">Réalisations</a><a href="#pourquoi">Atouts</a><a href="#methode">Méthode</a><a href="#tarifs">Tarifs</a><a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn-sm">Me contacter</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero dark">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1>Je construis des marques <span class="grad">professionnelles</span> et des sites qui convertissent.</h1>
+      <p class="lead">Graphiste, brand designer et développeur web. Du logo à la mise en ligne, je conçois une identité cohérente qui inspire confiance et fait grandir votre activité.</p>
+      <div class="actions">
+        <a href="#contact" class="btn btn-grad">Démarrer un projet</a>
+        <a href="#projets" class="btn btn-line">Voir mes réalisations</a>
+      </div>
+      <div class="proof">
+        <span class="avatars"><i>A</i><i>M</i><i>K</i><i>S</i><i>N</i></span>
+        <span><span class="stars" aria-label="5 étoiles">★★★★★</span><br>+40 clients accompagnés</span>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="glass main"><span class="mark xl"><svg><use href="#bk"/></svg><b>bk</b></span></div>
+      <div class="glass chip c1">Identité visuelle</div>
+      <div class="glass chip c2">Site web</div>
+      <div class="glass chip c3">Design graphique</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="outils">
+  <div class="wrap">
+    <p class="label">Boîte à outils</p>
+    <h2>Les outils que je maîtrise au quotidien.</h2>
+    <p class="sub">Des logiciels standards de l'industrie pour des livrables propres, précis et prêts à l'emploi.</p>
+    <div class="tools">
+      <article><i>Ai</i><h3>Illustrator</h3><p>Logos, icônes et systèmes graphiques vectoriels.</p></article>
+      <article><i>Ps</i><h3>Photoshop</h3><p>Retouche, visuels et compositions soignés.</p></article>
+      <article><i>Fg</i><h3>Figma</h3><p>Maquettes, prototypes et design systems.</p></article>
+      <article><i>Id</i><h3>InDesign</h3><p>Brochures, rapports et éditions multipages.</p></article>
+      <article><i>JS</i><h3>HTML, CSS, JavaScript</h3><p>Sites rapides, accessibles et sur mesure.</p></article>
+      <article><i>Wp</i><h3>WordPress</h3><p>Sites faciles à gérer pour vos équipes.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="projets">
+  <div class="wrap">
+    <p class="label">Mes réalisations</p>
+    <h2>Des projets qui parlent d'eux-mêmes.</h2>
+    <div class="filters" role="group" aria-label="Filtrer les projets">
+      <button class="on" data-filter="all">Tous</button><button data-filter="brand">Identité visuelle</button><button data-filter="graphic">Graphisme</button><button data-filter="web">Web</button>
+    </div>
+    <!-- Remplace chaque .tile par <img src="assets/projet.jpg" alt="..."> -->
+    <div class="projects">
+      <article class="project" data-cat="brand"><div class="tile" style="--a:#00A040;--b:#003D29">Maison Lumière</div><h3>Maison Lumière</h3><p>Identité visuelle · Hôtellerie</p></article>
+      <article class="project" data-cat="web"><div class="tile" style="--a:#003D29;--b:#021A12">Kivu Café</div><h3>Kivu Café</h3><p>Site e-commerce · Agroalimentaire</p></article>
+      <article class="project" data-cat="graphic"><div class="tile" style="--a:#FAE31A;--b:#00A040">Festival Kin</div><h3>Festival Kin</h3><p>Affiches et supports · Événementiel</p></article>
+      <article class="project" data-cat="brand"><div class="tile" style="--a:#2BC46A;--b:#006B3C">Nova Santé</div><h3>Nova Santé</h3><p>Logo et charte · Santé</p></article>
+      <article class="project" data-cat="web"><div class="tile" style="--a:#00A040;--b:#021A12">Atelier Congo</div><h3>Atelier Congo</h3><p>Site vitrine · Architecture</p></article>
+      <article class="project" data-cat="graphic"><div class="tile" style="--a:#006B3C;--b:#FAE31A">Rapport annuel</div><h3>Rapport annuel ONG</h3><p>Édition · Associatif</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="pourquoi">
+  <div class="wrap">
+    <p class="label">Pourquoi travailler avec moi</p>
+    <h2>Un partenaire créatif qui pense <span class="grad">résultats</span>.</h2>
+    <p class="sub">Pas de design pour le décor. Chaque choix sert votre image et vos objectifs.</p>
+    <div class="features">
+      <article class="glass"><h3>Stratégie et créativité</h3><p>Je pars de votre positionnement pour créer une marque qui se démarque.</p></article>
+      <article class="glass"><h3>Design et code réunis</h3><p>Un seul interlocuteur du logo jusqu'au site en ligne, sans perte d'information.</p></article>
+      <article class="glass"><h3>Cohérence partout</h3><p>Même identité sur vos réseaux, vos supports imprimés et votre site.</p></article>
+      <article class="glass"><h3>Délais respectés</h3><p>Un planning clair dès le départ et des points d'étape réguliers.</p></article>
+      <article class="glass"><h3>Fichiers prêts à l'emploi</h3><p>Formats web et impression, guide d'utilisation et sources incluses.</p></article>
+      <article class="glass"><h3>Suivi après livraison</h3><p>Je reste disponible pour les ajustements et l'évolution de votre marque.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="methode">
+  <div class="wrap">
+    <p class="label">La méthode</p>
+    <h2>6 étapes, de l'idée à la livraison.</h2>
+    <p class="sub">Un processus simple et transparent, adapté à la taille de votre projet.</p>
+    <ol class="steps">
+      <li><span>01</span><div><h3>Découverte</h3><p>Entretien pour cerner vos objectifs, votre public et vos contraintes.</p></div><time>1 jour</time></li>
+      <li><span>02</span><div><h3>Recherche et stratégie</h3><p>Étude du marché, références et direction créative.</p></div><time>3 jours</time></li>
+      <li><span>03</span><div><h3>Création</h3><p>Pistes graphiques, choix de la meilleure et affinage avec vous.</p></div><time>1 à 2 semaines</time></li>
+      <li><span>04</span><div><h3>Développement</h3><p>Intégration du site, tests sur mobile et optimisation de la vitesse.</p></div><time>1 à 2 semaines</time></li>
+      <li><span>05</span><div><h3>Livraison</h3><p>Fichiers finaux, charte graphique et mise en ligne.</p></div><time>2 jours</time></li>
+      <li><span>06</span><div><h3>Accompagnement</h3><p>Support et ajustements après le lancement.</p></div><time>30 jours</time></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section soft" id="apropos">
+  <div class="wrap about">
+    <div class="portrait"><!-- Remplace par : <img src="assets/beni.jpg" alt="Beni Kipaka"> --><span class="mark xl"><svg><use href="#bk"/></svg><b>bk</b></span></div>
+    <div>
+      <p class="label">À propos</p>
+      <h2>Designer et développeur, pour une marque entière.</h2>
+      <p class="sub">Je suis Beni Kipaka, basé à Kinshasa. Depuis plus de 6 ans, j'aide entrepreneurs, entreprises et associations à construire une image claire et un site qui les représente vraiment.</p>
+      <blockquote>« Une bonne marque se reconnaît en une seconde et se retient longtemps. »</blockquote>
+      <dl class="stats"><div><dt>6+</dt><dd>années d'expérience</dd></div><div><dt>60+</dt><dd>projets livrés</dd></div><div><dt>40+</dt><dd>clients satisfaits</dd></div></dl>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="avis">
+  <div class="wrap">
+    <p class="label">Ils m'ont fait confiance</p>
+    <h2>Ce que disent mes clients.</h2>
+    <div class="quotes">
+      <figure><blockquote>Beni a compris notre marque dès le premier rendez-vous. Notre logo est simple et nos clients le reconnaissent partout.</blockquote><figcaption><i>NP</i><span>Nom Prénom<small>Fondatrice, Maison Lumière</small></span></figcaption></figure>
+      <figure><blockquote>Un site livré dans les délais, rapide et facile à gérer. Les ventes en ligne ont démarré dès le premier mois.</blockquote><figcaption><i>NP</i><span>Nom Prénom<small>Gérant, Kivu Café</small></span></figcaption></figure>
+      <figure><blockquote>Un vrai professionnel, à l'écoute et force de proposition. Notre rapport annuel n'a jamais été aussi lisible.</blockquote><figcaption><i>NP</i><span>Nom Prénom<small>Directrice, ONG Horizon</small></span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="tarifs">
+  <div class="wrap">
+    <p class="label">Tarifs</p>
+    <h2>Choisissez la formule adaptée à votre projet.</h2>
+    <p class="sub">Des prix clairs, sans frais cachés. Devis personnalisé sur demande.</p>
+    <div class="pricing">
+      <article class="glass"><h3>Logo essentiel</h3><p class="desc">Pour lancer votre activité avec une base solide.</p><p class="price">150 $</p>
+        <ul><li>Logo et 2 déclinaisons</li><li>Palette et typographie</li><li>Fichiers web et impression</li><li>2 retours inclus</li></ul><a href="#contact" class="btn btn-line">Choisir cette formule</a></article>
+      <article class="glass hot"><span class="badge">Le plus demandé</span><h3>Identité complète</h3><p class="desc">Une marque cohérente sur tous vos supports.</p><p class="price">450 $</p>
+        <ul><li>Tout le logo essentiel</li><li>Charte graphique complète</li><li>Papeterie et réseaux sociaux</li><li>Guide d'utilisation PDF</li><li>4 retours inclus</li></ul><a href="#contact" class="btn btn-grad">Choisir cette formule</a></article>
+      <article class="glass"><h3>Site web</h3><p class="desc">Un site professionnel, rapide et responsive.</p><p class="price"><small>dès</small> 600 $</p>
+        <ul><li>Jusqu'à 5 pages</li><li>Design sur mesure</li><li>Optimisation SEO et vitesse</li><li>Prise en main incluse</li></ul><a href="#contact" class="btn btn-line">Choisir cette formule</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap faq">
+    <div><p class="label">FAQ</p><h2>Des questions ? Voici les réponses.</h2></div>
+    <div>
+      <details><summary>Combien de temps dure un projet ?</summary><p>Un logo demande environ 2 semaines, une identité complète 3 à 4 semaines et un site web 3 à 6 semaines, selon le contenu.</p></details>
+      <details><summary>Comment se passe le paiement ?</summary><p>Un acompte de 50 % au lancement, le solde à la livraison. Mobile money, virement et espèces sont acceptés.</p></details>
+      <details><summary>Puis-je demander des modifications ?</summary><p>Oui, chaque formule inclut des retours. Des ajustements supplémentaires restent possibles au tarif horaire.</p></details>
+      <details><summary>Les fichiers sources m'appartiennent-ils ?</summary><p>Oui. À la livraison complète, vous recevez tous les fichiers finaux et sources ainsi que les droits d'utilisation.</p></details>
+      <details><summary>Travaillez-vous à distance ?</summary><p>Oui, avec des clients dans plusieurs pays, par visioconférence, e-mail et WhatsApp.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section dark contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Prêt à passer à l'action ?</h2>
+      <p class="lead">Décrivez votre projet, je vous réponds sous 48 heures avec une première proposition.</p>
+      <ul class="infos"><li><a href="mailto:contact@benikipaka.com">contact@benikipaka.com</a></li><li><a href="tel:+243000000000">+243 000 000 000</a></li><li>Kinshasa, République démocratique du Congo</li></ul>
+      <p class="social"><a href="#">Behance</a><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">GitHub</a></p>
+    </div>
+    <form id="form" novalidate>
+      <label>Nom<input name="nom" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Type de projet<select name="type"><option>Identité visuelle</option><option>Design graphique</option><option>Site web</option><option>Autre</option></select></label>
+      <label>Message<textarea name="message" rows="4" required></textarea></label>
+      <button class="btn btn-grad" type="submit">Envoyer le message</button>
+      <p class="msg" id="msg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <p>© <span id="year"></span> Beni Kipaka. Tous droits réservés.</p><a href="#top">Retour en haut</a>
+</div></footer>
+<script src="script.js"></script>
+</body>
+</html>

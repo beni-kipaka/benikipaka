@@ -57,7 +57,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 .icon-btn:hover{background:var(--surface)}
 .i-sun{display:block}.i-moon{display:none}
 [data-theme="light"] .i-sun{display:none}[data-theme="light"] .i-moon{display:block}
-.burger{display:none;flex-direction:column;gap:5px}
+.burger{display:none;flex-direction:column;gap:5px;place-content: center;align-content: center; justify-content: center;}
 .burger span{width:18px;height:2px;background:currentColor;transition:.25s}
 .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .burger[aria-expanded="true"] span:nth-child(2){opacity:0}

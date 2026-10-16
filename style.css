@@ -134,6 +134,19 @@ ul,ol{margin:0;padding:0;list-style:none}
 .bars i::after{content:"";position:absolute;inset:0 auto 0 0;width:0;border-radius:8px;background:linear-gradient(90deg,var(--green),var(--yellow));transition:width 1.2s cubic-bezier(.2,.7,.2,1)}
 .bars.is-in i::after,.reveal.is-in .bars i::after{width:var(--v)}
 
+
+/* Mes outils */
+.tools{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s2);margin-top:var(--s3)}
+.tool{display:flex;align-items:center;gap:1rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1rem 1.1rem;transition:transform .25s,border-color .25s}
+.tool:hover{transform:translateY(-4px);border-color:var(--yellow)}
+.tool.is-hidden{display:none}
+.tool__ico{flex:none;width:48px;height:48px;display:grid;place-items:center;border-radius:14px;background:var(--green-dark);color:var(--yellow);font:700 1rem var(--font-head);border:1px solid var(--line)}
+.tool strong{display:block;font:600 1rem var(--font-head);line-height:1.25}
+.tool small{color:var(--muted);font-size:.85rem;line-height:1.35;display:block;margin-top:.15rem}
+@media (max-width:1060px){.tools{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:760px){.tools{grid-template-columns:repeat(2,1fr)}.tool{flex-direction:column;align-items:flex-start}}
+@media (max-width:420px){.tools{grid-template-columns:1fr}.tool{flex-direction:row;align-items:center}}
+
 /* Parcours : timeline */
 .path{display:grid;grid-template-columns:1fr 1fr;gap:var(--s4)}
 .path__title{font-size:1.4rem;margin-bottom:var(--s3)}

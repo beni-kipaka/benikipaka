@@ -67,9 +67,16 @@
   new IntersectionObserver((e, o) => { if (e[0].isIntersecting) { $$('[data-count]', stats).forEach(count); o.disconnect(); } }).observe(stats);
 
   /* 6. Filtrage des projets */
-  $$('.filter').forEach(btn => btn.addEventListener('click', () => {
-    $$('.filter').forEach(b => { b.classList.toggle('is-active', b === btn); b.setAttribute('aria-pressed', b === btn); });
+  $$('.filter:not(.tool-filter)').forEach(btn => btn.addEventListener('click', () => {
+    $$('.filter:not(.tool-filter)').forEach(b => { b.classList.toggle('is-active', b === btn); b.setAttribute('aria-pressed', b === btn); });
     $$('.project').forEach(p => p.classList.toggle('is-hidden', btn.dataset.filter !== 'all' && p.dataset.cat !== btn.dataset.filter));
+  }));
+
+
+  /* 6b. Filtrage des outils */
+  $$('.tool-filter').forEach(btn => btn.addEventListener('click', () => {
+    $$('.tool-filter').forEach(b => { b.classList.toggle('is-active', b === btn); b.setAttribute('aria-pressed', b === btn); });
+    $$('.tool').forEach(t => t.classList.toggle('is-hidden', btn.dataset.tool !== 'all' && t.dataset.cat !== btn.dataset.tool));
   }));
 
   /* 7. Validation du formulaire (envoi via l'application e-mail) */
